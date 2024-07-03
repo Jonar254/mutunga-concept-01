@@ -505,6 +505,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     top: 90px; /* Start 90px down from the top */
     left: 0; /* Align to the left */
     overflow-y: auto; /* Enable scroll for many items */
+    z-index: 999;
 }
 
 
@@ -529,35 +530,6 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     transform: translateY(-15px);
 }
 
-/* Styling the hamburger icon bars */
-.slicknav_btn .slicknav_icon-bar {
-    background-color: black; /* Color of the bars */
-    height: 2px; /* Reduced thickness for a finer appearance */
-    width: 25px; /* Width of the bars */
-    margin: 7px 0; /* Increased spacing between bars */
-    transition: all 0.3s ease; /* Smooth transition for transforming */
-}
-
-/* Transform to "X" on toggle */
-.slicknav_btn.slicknav_open .slicknav_icon-bar {
-    position: absolute;
-    margin: 0; /* Remove margin to align for X shape */
-    height: 2px; /* Keeping the thinner style even in X form */
-}
-
-.slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(1) {
-    transform: rotate(45deg); /* Top bar rotates to form X */
-    top: 25px; /* Centering adjustment */
-}
-
-.slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(2) {
-    transform: scale(0); /* Middle bar disappears */
-}
-
-.slicknav_btn.slicknav_open .slicknav_icon-bar:nth-child(3) {
-    transform: rotate(-45deg); /* Bottom bar rotates to form X */
-    top: 25px; /* Centering adjustment */
-}
 
 /* Ensure visibility if the background is also dark */
 
@@ -624,19 +596,17 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     letter-spacing: 1px;
 
 }
-.header-section .site-branding a {
-    z-index: 990;  /* Higher than other elements */
-    position: relative;  /* Needed for z-index to take effect */
-}
+
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
         font-size: 27px;
-        font-weight: bols;
+        font-weight: bold;
         color: #000000; 
         margin: 0;
         transform: translateY(-15px);
         letter-spacing: 1px;  /* Adjust the spacing to suit your design needs */
+        cursor:pointer;
     }
 }
 
@@ -697,6 +667,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
         padding-left: 15px; /* Add some padding if needed for spacing from the edge */
     }
 }
+
 
 @media (max-width: 767px) {
     .header-section {

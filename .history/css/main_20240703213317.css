@@ -484,36 +484,6 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 
 /* Mobile Menu */
-.slicknav_menu {
-    background: none;
-    padding: 4px 0;
-    display: none;
-    z-index: 999;
-    margin-bottom: 20px;
-}
-
-.slicknav_nav {
-    background-color: #fff;
-  
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center vertically */
-    height: calc(100% - 90px); /* Calculate the height as full height minus 90px */
-    position: fixed; /* Fixed positioning to cover the full screen */
-    width: 100%; /* Full width */
-    top: 90px; /* Start 90px down from the top */
-    left: 0; /* Align to the left */
-    overflow-y: auto; /* Enable scroll for many items */
-}
-
-
-.js .slicknav_menu {
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
 
 /* Assuming .site-branding contains both the text and the menu button */
 

@@ -637,6 +637,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
         margin: 0;
         transform: translateY(-15px);
         letter-spacing: 1px;  /* Adjust the spacing to suit your design needs */
+        cursor:pointer;
     }
 }
 

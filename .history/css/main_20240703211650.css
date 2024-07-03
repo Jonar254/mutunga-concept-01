@@ -624,19 +624,17 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     letter-spacing: 1px;
 
 }
-.header-section .site-branding a {
-    z-index: 990;  /* Higher than other elements */
-    position: relative;  /* Needed for z-index to take effect */
-}
+
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
         font-size: 27px;
-        font-weight: bols;
+        font-weight: bold;
         color: #000000; 
         margin: 0;
         transform: translateY(-15px);
         letter-spacing: 1px;  /* Adjust the spacing to suit your design needs */
+        cursor:pointer;
     }
 }
 
@@ -688,6 +686,10 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 .noscroll {
     overflow: hidden;
+}
+.header-section .site-branding a {
+    z-index: 1000;  /* Ensure logo is above the menu */
+    position: relative;  /* Position relative for z-index to take effect */
 }
 
 /* Responsive adjustments for smaller devices */

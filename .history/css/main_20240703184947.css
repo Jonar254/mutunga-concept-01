@@ -625,7 +625,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 }
 .header-section .site-branding a {
-    z-index: 990;  /* Higher than other elements */
+    z-index: 00;  /* Higher than other elements */
     position: relative;  /* Needed for z-index to take effect */
 }
 @media (max-width: 767px) {

@@ -517,17 +517,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 /* Assuming .site-branding contains both the text and the menu button */
 
-/* Style for the hamburger menu button */
-.slicknav_btn {
-    position: relative;
-    padding: 10px 15px;  /* Padding around the button for clickable area */
-    cursor: pointer;
-    display: block;
-    z-index: 1000;
-    background-color: transparent;
-    border: none;
-    transform: translateY(-15px);
-}
+
 
 /* Styling the hamburger icon bars */
 .slicknav_btn .slicknav_icon-bar {
