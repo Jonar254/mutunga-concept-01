@@ -499,7 +499,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
-    height: calc(100% - 90px); /* Calculate the height as full height minus 90px */
+    height: calc(100% - 95px); /* Calculate the height as full height minus 90px */
     position: fixed; /* Fixed positioning to cover the full screen */
     width: 100%; /* Full width */
     top: 90px; /* Start 90px down from the top */
@@ -526,7 +526,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     z-index: 1000;
     background-color: transparent;
     border: none;
-    transform: translateY(-15px);
+    transform: translateY(-20px);
 }
 
 /* Styling the hamburger icon bars */
@@ -630,7 +630,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
         font-weight: bols;
         color: #000000; 
         margin: 0;
-        transform: translateY(-15px);
+        transform: translateY(-20px);
         letter-spacing: 1px;  /* Adjust the spacing to suit your design needs */
     }
 }
