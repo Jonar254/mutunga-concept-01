@@ -624,10 +624,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     letter-spacing: 1px;
 
 }
-.header-section .site-branding a {
-    z-index: 1100;  /* Higher than other elements */
-    position: relative;  /* Needed for z-index to take effect */
-}
+
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
