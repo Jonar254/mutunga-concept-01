@@ -627,11 +627,11 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
         font-size: 27px;
-        font-weight: bols;
+        font-weight: 900;
         color: #000000; 
         margin: 0;
         transform: translateY(-20px);
-        letter-spacing: 1px;  /* Adjust the spacing to suit your design needs */
+        letter-spacing: 2px;  /* Adjust the spacing to suit your design needs */
     }
 }
 
