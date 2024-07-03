@@ -621,7 +621,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     color: #000000; /* Adjust the color to match the reference */
     margin: 0;
     font-size: 50px;
-    letter-spacing: 1px;
+    
 
 }
 @media (max-width: 767px) {
