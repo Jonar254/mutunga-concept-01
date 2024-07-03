@@ -616,11 +616,11 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 /* Additional Styles for the Header */
 .header-section .site-branding .site-title {
     font-family: 'kepler-std-semicondensed-dis', serif; /* Adjust the font to match the reference */
-    font-weight: 470;
+    font-weight: 400;
     font-style: normal;
     color: #333; /* Adjust the color to match the reference */
     margin: 0;
-    font-size: 50px;
+    font-size: 60px;
 
 }
 
