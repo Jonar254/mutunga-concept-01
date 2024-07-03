@@ -620,15 +620,15 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     font-style: normal;
     color: #333; /* Adjust the color to match the reference */
     margin: 0;
-    font-size: 50px;
+    font-size: 25px;
 
 }
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
-        font-size: 27px;
-        font-weight: bold;
-        color: #000000; 
+        font-size: 1.8rem;
+        font-weight: 470;
+        color: #333; 
         margin: 0;
         transform: translateY(-20px);
        

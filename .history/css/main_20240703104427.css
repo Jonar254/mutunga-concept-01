@@ -626,9 +626,9 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
-        font-size: 27px;
+        font-size: 25px;
         font-weight: bold;
-        color: #000000; 
+        color: #333; 
         margin: 0;
         transform: translateY(-20px);
        
