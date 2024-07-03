@@ -617,10 +617,10 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 .header-section .site-branding .site-title {
     font-family: 'kepler-std-semicondensed-dis', serif; /* Adjust the font to match the reference */
     font-weight: 700;
-    font-style: normal;
+    font-size: 5rem;
     color: #333; /* Adjust the color to match the reference */
     margin: 0;
-    font-size: 60px;
+    font-size: 50px;
 
 }
 
