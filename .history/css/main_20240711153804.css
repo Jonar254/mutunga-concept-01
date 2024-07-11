@@ -104,13 +104,13 @@ body{
     .theme-toggle {
         position: absolute;
         right: 30px;
-        top: 7.9px;
+        top: 7px;
     }
 
     .nav-button {
         position: absolute;
         right: 20px; /* Adjust the position to the left of the theme toggle button */
-        top: 7.9px;
+        top: 8px;
     }
 }
 
