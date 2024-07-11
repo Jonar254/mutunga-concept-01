@@ -95,11 +95,11 @@ body{
 .theme-toggle:focus {
     outline: none; /* Remove the default focus outline */
 }
-
+/*
 .header-section .site-branding a:hover {
-    text-decoration: none; /* Disable the underline effect on hover */
+    text-decoration: none;  Disable the underline effect on hover 
 }
-
+*/
 @media (max-width: 767px) {
     .theme-toggle {
         position: absolute;
@@ -430,7 +430,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 /* ==========================================================================
    2.0 Header Section
    ========================================================================== */
-.header-section {
+   .header-section {
     background-color: var(--header-background);
     position: relative;
     -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.06);
@@ -441,7 +441,6 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     z-index: 100;
     padding: 1rem 0;
 }
-
 
 .header-section.navbar-fixed-top {
     position: relative;
@@ -583,7 +582,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     height: calc(100% - 9px); /* Calculate the height as full height minus 90px */
     position: fixed; /* Fixed positioning to cover the full screen */
     width: 100%; /* Full width */
-    top: 49px; /* Start 90px down from the top */
+    top: 85px; /* Start 90px down from the top */
     left: 0; /* Align to the left */
     overflow-y: auto; /* Enable scroll for many items */
 }
@@ -664,20 +663,14 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     box-sizing: border-box;  /* Ensures padding does not affect the set width */
     text-transform: uppercase;  /* Uppercase text for stylistic choice */
     text-decoration: none;  /* Removes underline from links */
-    top: -50px;
+    top: 110px;
 }
 .slicknav_nav {
-    background-color: var(--background-color);
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
-    position: fixed; /* Fixed positioning to cover the full screen */
-    left: 0; /* Align to the left */
-    overflow-y: auto; /* Enable scroll for many items */
-    padding: 30px 0; /* Adjust padding if needed */
+    justify-content: flex-start; /* Align items from the start/top */
+    align-items: center; /* Keep items centered horizontally */
+    padding-top: 70px /* Adds padding at the top to push content down */
 }
 
 .slicknav_nav a .caret {
@@ -710,8 +703,11 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     letter-spacing: 1px;
 }
 .header-section .site-branding a {
-    z-index: 1;  /* Higher than other elements */
+    z-index: 990;  /* Higher than other elements */
     position: relative;  /* Needed for z-index to take effect */
+    display: inline-block; /* Ensure it doesn't stretch */
+    max-width: 200px; /* Constrain the width */
+    overflow: hidden; /* Prevent overflow issues */
 }
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
@@ -780,10 +776,10 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     .site-branding {
         text-align: left; /* Aligns the logo to the left on small devices */
         padding-left: 15px; /* Add some padding if needed for spacing from the edge */
+        display: inline-block;
+        max-width: 200px;
     }
-}
 
-@media (max-width: 767px) {
     .header-section {
         background-color: var(--header-background);
         position: relative;
@@ -794,8 +790,12 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
         top: 0;
         z-index: 100;
         padding: 0.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
+
 /* ==========================================================================
    3.0 Hero Section
    ========================================================================== */

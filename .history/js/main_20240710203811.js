@@ -5,21 +5,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (currentTheme === 'dark') {
         root.setAttribute('data-theme', 'dark');
-        themeToggle.querySelector('img').src = 'img/sun.png';
+        themeToggle.querySelector('img').src = 'moon.png';
     } else {
         root.setAttribute('data-theme', 'light');
-        themeToggle.querySelector('img').src = 'img/moon.png';
+        themeToggle.querySelector('img').src = 'sun.png';
     }
 
     themeToggle.addEventListener('click', () => {
         const theme = root.getAttribute('data-theme');
         if (theme === 'light') {
             root.setAttribute('data-theme', 'dark');
-            themeToggle.querySelector('img').src = 'img/sun.png';
+            themeToggle.querySelector('img').src = 'moon.png';
             localStorage.setItem('theme', 'dark');
         } else {
             root.setAttribute('data-theme', 'light');
-            themeToggle.querySelector('img').src = 'img/moon.png';
+            themeToggle.querySelector('img').src = 'sun.png';
             localStorage.setItem('theme', 'light');
         }
     });

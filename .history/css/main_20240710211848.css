@@ -30,7 +30,7 @@
     /* Define CSS variables for light and dark modes */
 :root {
     --background-color: #ffffff;
-    --text-color: #000000;
+    --text-color: #777;
     --header-background: #ffffff;
     --header-text-color: #222;
     --link-color: #222;
@@ -45,7 +45,6 @@
     --comment-border: #E5E5E5;
     --comment-name-color: #283035;
     --comment-content-bg: #FFF;
-    --ham-menu: #000000;
 }
 
 /* Dark mode */
@@ -66,7 +65,6 @@
     --comment-border: #333333;
     --comment-name-color: #ffffff;
     --comment-content-bg: #1f1f1f;
-    --ham-menu: #ffffff;
 }
 
 /*  ==========================================================================
@@ -92,33 +90,26 @@ body{
     cursor: pointer;
     z-index: 1000;
 }
-.theme-toggle:focus {
-    outline: none; /* Remove the default focus outline */
-}
-
-.header-section .site-branding a:hover {
-    text-decoration: none; /* Disable the underline effect on hover */
-}
 
 @media (max-width: 767px) {
     .theme-toggle {
         position: absolute;
-        right: 30px;
-        top: 8px;
+        right: 20px;
+        top: 5px;
     }
 
     .nav-button {
         position: absolute;
         right: 20px; /* Adjust the position to the left of the theme toggle button */
-        top: 8px;
+        top: 15px;
     }
 }
 
 @media (min-width: 768px) {
     .theme-toggle {
         position: absolute;
-        right: 20px;
-        top: 8px;
+        right: 15px;
+        top: 15px;
     }
 }
 
@@ -442,7 +433,6 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     padding: 1rem 0;
 }
 
-
 .header-section.navbar-fixed-top {
     position: relative;
 }
@@ -580,10 +570,10 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
-    height: calc(100% - 9px); /* Calculate the height as full height minus 90px */
+    height: calc(100% - 90px); /* Calculate the height as full height minus 90px */
     position: fixed; /* Fixed positioning to cover the full screen */
     width: 100%; /* Full width */
-    top: 49px; /* Start 90px down from the top */
+    top: 90px; /* Start 90px down from the top */
     left: 0; /* Align to the left */
     overflow-y: auto; /* Enable scroll for many items */
 }
@@ -611,7 +601,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 /* Styling the hamburger icon bars */
 .slicknav_btn .slicknav_icon-bar {
-    background-color: var(--ham-menu); /* Color of the bars */
+    background-color: black; /* Color of the bars */
     height: 2px; /* Reduced thickness for a finer appearance */
     width: 25px; /* Width of the bars */
     margin: 7px 0; /* Increased spacing between bars */
@@ -664,20 +654,13 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     box-sizing: border-box;  /* Ensures padding does not affect the set width */
     text-transform: uppercase;  /* Uppercase text for stylistic choice */
     text-decoration: none;  /* Removes underline from links */
-    top: -50px;
 }
 .slicknav_nav {
-    background-color: var(--background-color);
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
-    position: fixed; /* Fixed positioning to cover the full screen */
-    left: 0; /* Align to the left */
-    overflow-y: auto; /* Enable scroll for many items */
-    padding: 30px 0; /* Adjust padding if needed */
+    justify-content: flex-start; /* Align items from the start/top */
+    align-items: center; /* Keep items centered horizontally */
+    padding-top: 70px /* Adds padding at the top to push content down */
 }
 
 .slicknav_nav a .caret {
@@ -710,14 +693,14 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     letter-spacing: 1px;
 }
 .header-section .site-branding a {
-    z-index: 1;  /* Higher than other elements */
+    z-index: 990;  /* Higher than other elements */
     position: relative;  /* Needed for z-index to take effect */
 }
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
         font-size: 27px;
-        font-weight: bold;
+        font-weight: bols;
         color: var(--header-text-color); 
         margin: 0;
         transform: translateY(-15px);

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         themeToggle.querySelector('img').src = 'img/sun.png';
     } else {
         root.setAttribute('data-theme', 'light');
-        themeToggle.querySelector('img').src = 'img/moon.png';
+        themeToggle.querySelector('img').src = 'img/sun.png';
     }
 
     themeToggle.addEventListener('click', () => {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('theme', 'dark');
         } else {
             root.setAttribute('data-theme', 'light');
-            themeToggle.querySelector('img').src = 'img/moon.png';
+            themeToggle.querySelector('img').src = 'img/sun.png';
             localStorage.setItem('theme', 'light');
         }
     });

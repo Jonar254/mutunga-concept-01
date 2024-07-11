@@ -583,7 +583,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     height: calc(100% - 9px); /* Calculate the height as full height minus 90px */
     position: fixed; /* Fixed positioning to cover the full screen */
     width: 100%; /* Full width */
-    top: 49px; /* Start 90px down from the top */
+    top: 85px; /* Start 90px down from the top */
     left: 0; /* Align to the left */
     overflow-y: auto; /* Enable scroll for many items */
 }
@@ -664,7 +664,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     box-sizing: border-box;  /* Ensures padding does not affect the set width */
     text-transform: uppercase;  /* Uppercase text for stylistic choice */
     text-decoration: none;  /* Removes underline from links */
-    top: -50px;
+    top: -50
 }
 .slicknav_nav {
     background-color: var(--background-color);
@@ -710,14 +710,14 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     letter-spacing: 1px;
 }
 .header-section .site-branding a {
-    z-index: 1;  /* Higher than other elements */
+    z-index: 990;  /* Higher than other elements */
     position: relative;  /* Needed for z-index to take effect */
 }
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
         font-size: 27px;
-        font-weight: bold;
+        font-weight: bols;
         color: var(--header-text-color); 
         margin: 0;
         transform: translateY(-15px);

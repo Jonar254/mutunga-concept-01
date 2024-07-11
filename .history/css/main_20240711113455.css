@@ -95,11 +95,11 @@ body{
 .theme-toggle:focus {
     outline: none; /* Remove the default focus outline */
 }
-
+/*
 .header-section .site-branding a:hover {
-    text-decoration: none; /* Disable the underline effect on hover */
+    text-decoration: none;  Disable the underline effect on hover 
 }
-
+*/
 @media (max-width: 767px) {
     .theme-toggle {
         position: absolute;
@@ -442,7 +442,6 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     padding: 1rem 0;
 }
 
-
 .header-section.navbar-fixed-top {
     position: relative;
 }
@@ -583,7 +582,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     height: calc(100% - 9px); /* Calculate the height as full height minus 90px */
     position: fixed; /* Fixed positioning to cover the full screen */
     width: 100%; /* Full width */
-    top: 49px; /* Start 90px down from the top */
+    top: 85px; /* Start 90px down from the top */
     left: 0; /* Align to the left */
     overflow-y: auto; /* Enable scroll for many items */
 }
@@ -664,20 +663,14 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     box-sizing: border-box;  /* Ensures padding does not affect the set width */
     text-transform: uppercase;  /* Uppercase text for stylistic choice */
     text-decoration: none;  /* Removes underline from links */
-    top: -50px;
+    top: 110px;
 }
 .slicknav_nav {
-    background-color: var(--background-color);
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
-    position: fixed; /* Fixed positioning to cover the full screen */
-    left: 0; /* Align to the left */
-    overflow-y: auto; /* Enable scroll for many items */
-    padding: 30px 0; /* Adjust padding if needed */
+    justify-content: flex-start; /* Align items from the start/top */
+    align-items: center; /* Keep items centered horizontally */
+    padding-top: 70px /* Adds padding at the top to push content down */
 }
 
 .slicknav_nav a .caret {
@@ -698,30 +691,56 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     background-color: rgba(0,0,0,0.1);  /* Subtle hover background for visual feedback */
     color: var(--link-hover-color);  /* Darkens text color on hover */
 }
-
-/* Additional Styles for the Header */
+.header-section .site-branding {
+    text-align: left; /* Align the logo to the left */
+    padding-left: 15px; /* Add some padding if needed for spacing from the edge */
+    position: relative; /* Needed for z-index to take effect */
+    width: auto; /* Prevent it from taking the full width */
+}
 .header-section .site-branding .site-title {
-    font-family: 'kepler-std-semicondensed-dis', serif; /* Adjust the font to match the reference */
+    font-family: 'kepler-std-semicondensed-dis', serif; 
+    font-size: 27px;
     font-weight: bold;
-    font-style: normal;
-    color: var(--header-text-color); /* Adjust the color to match the reference */
+    color: var(--header-text-color); 
     margin: 0;
-    font-size: 50px;
-    letter-spacing: 1px;
+    transform: translateY(-15px);
+    letter-spacing: 1px; /* Adjust the spacing to suit your design needs */
+    z-index: 1000; /* Higher than other elements */
+    position: relative; /* Needed for z-index to take effect */
+    display: inline-block; /* Make sure it only takes as much space as needed */
 }
 .header-section .site-branding a {
-    z-index: 1;  /* Higher than other elements */
+    z-index: 990;  /* Higher than other elements */
     position: relative;  /* Needed for z-index to take effect */
 }
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
         font-size: 27px;
-        font-weight: bold;
+        font-weight: bols;
         color: var(--header-text-color); 
         margin: 0;
         transform: translateY(-15px);
         letter-spacing: 1px;  /* Adjust the spacing to suit your design needs */
+    }
+}
+@media (max-width: 767px) {
+    .theme-toggle {
+        position: absolute;
+        right: 30px;
+        top: 8px;
+        z-index: 999; /* Lower than the logo */
+    }
+
+    .nav-button {
+        position: absolute;
+        right: 60px; /* Adjust the position to the left of the theme toggle button */
+        top: 8px;
+        z-index: 999; /* Lower than the logo */
+    }
+
+    .header-section {
+        padding: 0.5rem 15px; /* Adjust padding for smaller devices */
     }
 }
 

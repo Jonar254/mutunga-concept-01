@@ -1,5 +1,6 @@
+
 /*  ==========================================================================
-    Table of Contents
+    Table of Contets
     ==========================================================================
     
     1.0 Common Styles
@@ -23,52 +24,11 @@
 
     @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,900');
    
-    @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 
-    @import url("https://use.typekit.net/bwj4ujl.css");
+      @import url("https://use.typekit.net/bwj4ujl.css");
 
-    /* Define CSS variables for light and dark modes */
-:root {
-    --background-color: #ffffff;
-    --text-color: #000000;
-    --header-background: #ffffff;
-    --header-text-color: #222;
-    --link-color: #222;
-    --link-hover-color: #111;
-    --button-background: #111;
-    --button-text-color: #ddd;
-    --footer-background: #111;
-    --footer-text-color: #777;
-    --footer-heading-color: #ffffff;
-    --portfolio-box-bg: rgba(255, 255, 255, 0.8);
-    --comment-bg: #FCFCFC;
-    --comment-border: #E5E5E5;
-    --comment-name-color: #283035;
-    --comment-content-bg: #FFF;
-    --ham-menu: #000000;
-}
-
-/* Dark mode */
-[data-theme="dark"] {
-    --background-color: #000000;
-    --text-color: #ffffff;
-    --header-background: #000000;
-    --header-text-color: #ffffff;
-    --link-color: #ffffff;
-    --link-hover-color: #ffffff;
-    --button-background: #fffff;
-    --button-text-color: #000000;
-    --footer-background: #000000;
-    --footer-text-color: #ffffff;
-    --footer-heading-color: #fffff;
-    --portfolio-box-bg: rgba(18, 18, 18, 0.8);
-    --comment-bg: #1f1f1f;
-    --comment-border: #333333;
-    --comment-name-color: #ffffff;
-    --comment-content-bg: #1f1f1f;
-    --ham-menu: #ffffff;
-}
-
+    
 /*  ==========================================================================
     1.0 Common Styles
     ========================================================================== */
@@ -77,60 +37,20 @@
     margin: 0;
 }
 body{
-    background-color: var(--background-color);
+    background-color: #fff;
     font-family: 'Baskervville', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    color: var(--text-color);
+    color: #777;
     font-weight: 400;
     position: relative;
     overflow-x: hidden;
-}
-.theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
-}
-.theme-toggle:focus {
-    outline: none; /* Remove the default focus outline */
-}
-
-.header-section .site-branding a:hover {
-    text-decoration: none; /* Disable the underline effect on hover */
-}
-
-@media (max-width: 767px) {
-    .theme-toggle {
-        position: absolute;
-        right: 30px;
-        top: 8px;
-    }
-
-    .nav-button {
-        position: absolute;
-        right: 20px; /* Adjust the position to the left of the theme toggle button */
-        top: 8px;
-    }
-}
-
-@media (min-width: 768px) {
-    .theme-toggle {
-        position: absolute;
-        right: 20px;
-        top: 8px;
-    }
-}
-
-/* Ensure the mainmenu items are not overlapped */
-.header-section .nav-menu {
-    margin-right: 60px; /* Adjust space for the theme toggle button */
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Baskervville', sans-serif;
     -webkit-font-smoothing:antialiased;
-    color: var(--header-text-color);
+    color: #222;
 }
 h1{
     font-size: 45px;
@@ -141,6 +61,7 @@ h1{
 }
 h2{
     font-size: 28px;
+    color: #333;
     margin: 0 0 8px;
     font-weight: 700;
     line-height: 35px;
@@ -150,7 +71,7 @@ h3,h4{
     margin: 0 0 10px;
     font-weight: 400;
     line-height: 1.4;
-    color: var(--header-text-color);
+    color: #333;
     letter-spacing: -0.04em;
 }
 h3{
@@ -177,13 +98,11 @@ p{
     font-size: 14px;
     margin-bottom: 15px;
 }
-a{  
-    font-family: "Baskervville",sans-serif;
+a{  font-family: "Baskervville",sans-serif;
     letter-spacing: -0.04em;
-    color: var(--link-color);
 }
-a:hover{
-    color: var(--link-hover-color);
+a, a:hover{
+    text-decoration: none;
 }
 a:focus{
     outline: 0;
@@ -359,8 +278,8 @@ button{
 .default-btn{
     font-family: "Baskervville",sans-serif;
     letter-spacing: 2px;
-    background-color: var(--button-background);
-    color: var(--button-text-color);
+    background-color: #111;
+    color: #ddd;
     line-height: 45px;
     display: inline-block;
     padding: 0 25px;
@@ -430,8 +349,8 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 /* ==========================================================================
    2.0 Header Section
    ========================================================================== */
-.header-section {
-    background-color: var(--header-background);
+   .header-section {
+    background-color: #fff;
     position: relative;
     -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.06);
     box-shadow: 0 0 15px rgba(255, 254, 254, 0.06);
@@ -441,7 +360,6 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     z-index: 100;
     padding: 1rem 0;
 }
-
 
 .header-section.navbar-fixed-top {
     position: relative;
@@ -453,7 +371,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 /* Main Header */
 .main-header {
-    background-color: var(--header-background);
+    background-color: #fff;
     position: relative;
 }
 
@@ -479,7 +397,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 #mainmenu li a {
     font-family: "Baskervville", serif;
-    color: var(--header-text-color);
+    color: #222;
     font-weight: 400;
     padding: 30px 0;
     text-transform: uppercase;
@@ -489,12 +407,12 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 
 #mainmenu li a:hover {
-    color: var(--link-hover-color);
+    color: #111;
 }
 
 /* Dropdown */
 #mainmenu li ul {
-    background-color: var(--background-color);
+    background-color: #fff;
     width: 200px;
     height: auto;
     position: absolute;
@@ -516,7 +434,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 
 #mainmenu li ul li {
-    border-bottom: 1px solid var(--comment-border);
+    border-bottom: 1px solid #eaeaea;
     display: block;
     position: relative;
 }
@@ -532,22 +450,22 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--text-color);
+    color: #777;
     -webkit-transition: color 0.3s ease 0s, padding 0.3s ease 0s;
     transition: color 0.3s ease 0s, padding 0.3s ease 0s;
 }
 
 #mainmenu li > ul > li:hover a {
-    color: var(--link-hover-color);
+    color: #111;
 }
 
 #mainmenu li > ul ul {
-    background-color: var(--background-color);
+    background-color: #fff;
     left: 200px;
 }
 
 #mainmenu li > ul li:hover > ul li a {
-    color: var(--text-color);
+    color: #777;
 }
 
 #mainmenu li ul li:hover > ul {
@@ -558,7 +476,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 #mainmenu li > ul li:hover > ul li > a:hover {
     background-color: transparent;
-    color: var(--header-text-color);
+    color: #fff;
 }
 
 #mainmenu li ul li li a:hover {
@@ -575,18 +493,20 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 
 .slicknav_nav {
-    background-color: var(--background-color);
+    background-color: #fff;
+  
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
-    height: calc(100% - 9px); /* Calculate the height as full height minus 90px */
+    height: calc(100% - 90px); /* Calculate the height as full height minus 90px */
     position: fixed; /* Fixed positioning to cover the full screen */
     width: 100%; /* Full width */
-    top: 49px; /* Start 90px down from the top */
+    top: 90px; /* Start 90px down from the top */
     left: 0; /* Align to the left */
     overflow-y: auto; /* Enable scroll for many items */
 }
+
 
 .js .slicknav_menu {
     width: 100%;
@@ -611,7 +531,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 /* Styling the hamburger icon bars */
 .slicknav_btn .slicknav_icon-bar {
-    background-color: var(--ham-menu); /* Color of the bars */
+    background-color: black; /* Color of the bars */
     height: 2px; /* Reduced thickness for a finer appearance */
     width: 25px; /* Width of the bars */
     margin: 7px 0; /* Increased spacing between bars */
@@ -656,7 +576,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 .slicknav_nav a {
     font-size: 25px;  /* Increased font size for better readability */
     font-weight: 400;  /* Bolder font weight for clearer text */
-    color: var(--text-color);  /* Dark grey for text, ensuring good contrast */
+    color: #333;  /* Dark grey for text, ensuring good contrast */
     padding: 12px 20px;  /* Adequate padding for sizeable touch targets */
     width: 100%;  /* Each link takes the full width to align center */
     text-align: center;  /* Ensures text is centered within each link */
@@ -664,21 +584,15 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     box-sizing: border-box;  /* Ensures padding does not affect the set width */
     text-transform: uppercase;  /* Uppercase text for stylistic choice */
     text-decoration: none;  /* Removes underline from links */
-    top: -50px;
 }
 .slicknav_nav {
-    background-color: var(--background-color);
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
-    position: fixed; /* Fixed positioning to cover the full screen */
-    left: 0; /* Align to the left */
-    overflow-y: auto; /* Enable scroll for many items */
-    padding: 30px 0; /* Adjust padding if needed */
+    justify-content: flex-start; /* Align items from the start/top */
+    align-items: center; /* Keep items centered horizontally */
+    padding-top: 70px /* Adds padding at the top to push content down */
 }
+
 
 .slicknav_nav a .caret {
     display: none;
@@ -696,7 +610,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 .slicknav_nav .slicknav_row:hover,
 .slicknav_nav a:hover {
     background-color: rgba(0,0,0,0.1);  /* Subtle hover background for visual feedback */
-    color: var(--link-hover-color);  /* Darkens text color on hover */
+    color: #000;  /* Darkens text color on hover */
 }
 
 /* Additional Styles for the Header */
@@ -704,21 +618,22 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     font-family: 'kepler-std-semicondensed-dis', serif; /* Adjust the font to match the reference */
     font-weight: bold;
     font-style: normal;
-    color: var(--header-text-color); /* Adjust the color to match the reference */
+    color: #000000; /* Adjust the color to match the reference */
     margin: 0;
     font-size: 50px;
     letter-spacing: 1px;
+
 }
 .header-section .site-branding a {
-    z-index: 1;  /* Higher than other elements */
+    z-index: 990;  /* Higher than other elements */
     position: relative;  /* Needed for z-index to take effect */
 }
 @media (max-width: 767px) {
     .header-section .site-branding .site-title {
         font-family: 'kepler-std-semicondensed-dis', serif; 
         font-size: 27px;
-        font-weight: bold;
-        color: var(--header-text-color); 
+        font-weight: bols;
+        color: #000000; 
         margin: 0;
         transform: translateY(-15px);
         letter-spacing: 1px;  /* Adjust the spacing to suit your design needs */
@@ -741,13 +656,13 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     font-family: 'Baskervville', serif; /* Adjust the font to match the reference */
     font-weight: 400;
     font-size: 1rem;
-    color: var(--text-color); /* Adjust the color to match the reference */
+    color: #333; /* Adjust the color to match the reference */
     text-decoration: none;
 }
 
 .nav-menu .nav-link:hover,
 .nav-menu .nav-item.active .nav-link {
-    color: var(--link-hover-color); /* Adjust the hover and active color */
+    color: #000; /* Adjust the hover and active color */
 }
 
 .submenu {
@@ -756,7 +671,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     padding: 0;
     margin: 0;
     position: absolute;
-    background: var(--background-color);
+    background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -785,7 +700,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 @media (max-width: 767px) {
     .header-section {
-        background-color: var(--header-background);
+        background-color: #fff;
         position: relative;
         -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.06);
         box-shadow: 0 0 15px rgba(255, 254, 254, 0.06);
@@ -809,8 +724,18 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 /* ==========================================================================
    4.0 Portfolio Section
+   .portfolio-box:hover .portfolio-inner {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
    ========================================================================== */
-.portfolio-section {
+   .portfolio-section {
     display: block;
     padding-top: 0;
 }
@@ -830,8 +755,9 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     width: 100%;
 }
 
+
 .portfolio-inner {
-    background-color: var(--portfolio-box-bg);
+    background-color: rgba(255,255,255,0.8);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -858,7 +784,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 .portfolio-content h3 a {
     font-size: 20px;
     font-weight: 700;
-    color: var(--header-text-color);
+    color: #000;
     margin-bottom: 0;
 }
 
@@ -893,7 +819,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 
 .portfolio-filter li.active {
-    color: var(--link-hover-color);
+    color: #111;
 }
 
 /*Portfolio Single Page*/
@@ -935,12 +861,12 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 .service-section{}
 .service-content{}
 .service-content i{
-    background-color: var(--header-text-color);
+    background-color: #000;
     width: 70px;
     height: 70px;
     line-height: 70px;
     text-align: center;
-    color: var(--background-color);
+    color: #fff;
     font-size: 30px;
     margin-bottom: 15px;
 }
@@ -952,12 +878,12 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 .testi-item{}
 .testi-item i{
-    color: var(--header-text-color);
+    color: #111;
     font-size: 30px;
     margin-bottom: 15px;
 }
 .testi-item h4{
-    color: var(--header-text-color);
+    color: #222;
     display: block;
     font-size: 18px;
     font-weight: 600;
@@ -966,7 +892,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     font-family: "Baskervville",sans-serif;
     display: block;
     font-size: 14px;
-    color: var(--text-color);
+    color: #777;
     font-weight: 400;
 }
 
@@ -994,7 +920,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     -webkit-transform: scale(1);
     transform: scale(1);
     transition: all 0.5s ease-in-out;
-    background-color: var(--header-text-color);
+    background-color: #111;
     transition: all 0.5s ease-in-out;
 } 
 /* ==========================================================================
@@ -1023,13 +949,13 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     display: block;
     font-size: 18px;
     font-weight: 600;
-    color: var(--header-text-color);
+    color: #222;
 }
 .team-content h3 span{
     display: block;
     font-family: "Baskervville",sans-serif;
     font-size: 14px;
-    color: var(--text-color);
+    color: #777;
     font-weight: 400;
 }
 /* ==========================================================================
@@ -1075,7 +1001,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 .page-header .meta-info a{
     font-size: 16;
-    color: var(--header-text-color);
+    color: #222;
     font-weight: 600;
 }
 .page-header .meta-info a:hover{
@@ -1165,7 +1091,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     font-size: 18px;
 }
 .blog-post .blog-content a{
-    color: var(--text-color);
+    color: #333;
 }
 .blog-post .blog-content a:hover{
     opacity: 0.8;
@@ -1182,7 +1108,7 @@ span.date{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
-    color: var(--text-color);
+    color: #333;
     letter-spacing: -0.2px
 }
 .blog-post .blog-content .post-meta:hover{
@@ -1374,22 +1300,22 @@ span.date{
 	display: block;
 	border-width: 10px 12px 10px 0;
 	border-style: solid;
-	border-color: transparent var(--comment-bg);
+	border-color: transparent #FCFCFC;
 	top: 8px;
 	left: -11px;
 }
 .comments-list .comment-box:before {
 	border-width: 11px 13px 11px 0;
-	border-color: transparent var(--comment-border);
+	border-color: transparent rgba(0,0,0,0.05);
 	left: -12px;
 }
 .reply-list .comment-box {
 	width: 800px;
 }
 .comment-box .comment-head {
-	background: var(--comment-bg);
+	background: #FCFCFC;
 	padding: 10px 12px;
-	border-bottom: 1px solid var(--comment-border);
+	border-bottom: 1px solid #E5E5E5;
 	overflow: hidden;
 	-webkit-border-radius: 4px 4px 0 0;
 	-moz-border-radius: 4px 4px 0 0;
@@ -1410,14 +1336,14 @@ span.date{
 	color: #03658c;
 }
 .comment-box .comment-name {
-	color: var(--comment-name-color);
+	color: #283035;
 	font-size: 14px;
 	font-weight: 700;
 	float: left;
 	margin-right: 10px;
 }
 .comment-box .comment-name a {
-	color: var(--comment-name-color);
+	color: #283035;
 }
 .comment-box .comment-head span {
 	float: left;
@@ -1427,10 +1353,10 @@ span.date{
 	top: 1px;
 }
 .comment-box .comment-content {
-	background: var(--comment-content-bg);
+	background: #FFF;
 	padding: 12px;
 	font-size: 15px;
-	color: var(--text-color);
+	color: #595959;
 	-webkit-border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px;
@@ -1486,7 +1412,7 @@ span.date{
     height: 40px;
     line-height: 38px;
     text-align: center;
-    color: var(--text-color);
+    color: #777;
     font-weight: 600;
 }
 .pagination_wrap li a:hover{
@@ -1495,8 +1421,8 @@ span.date{
     box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.20);
 }
 .pagination_wrap li a.active{
-    background-color: var(--header-text-color);
-    border: 1px solid var(--header-text-color);
+    background-color: #111;
+    border: 1px solid #111;
     color: #fff;
 }
 
@@ -1504,7 +1430,7 @@ span.date{
    13.0 Footer Section
    ========================================================================== */
 .footer-widget-section{
-    background-color: var(--footer-background);
+    background-color: #111;
 }
 .footer-widget{}
 .footer-widget h2 {
@@ -1512,7 +1438,6 @@ span.date{
     font-weight: 800;
     letter-spacing: -1px;
     margin: 0;
-    color: var(--footer-heading-color);
 }
 .footer-widget .sep{
     width: 60px;
@@ -1529,7 +1454,7 @@ span.date{
 .footer-widget .address li{
     display: block;
     line-height: 30px;
-    color: var(--footer-text-color);
+    color: #777;
     margin-bottom: 25px;
     padding-left: 50px;
     position: relative;
@@ -1548,7 +1473,7 @@ span.date{
     top: 0;
 }
 .footer-widget .address li a{
-    color: var(--footer-text-color);
+    color: #777;
     font-family: "Baskervville", sans-serif;
     letter-spacing: inherit;
 }
@@ -1586,19 +1511,18 @@ span.date{
 
 /*Copyright Text*/
 .copyright-text{
-    background-color: var(--footer-background);
+    background-color: #ffffff;
     padding: 25px 0;
-    border-top: 1px solid var(--footer-heading-color);
+    border-top: 1px solid #222;
 }
 .copyright-text p{
     margin: 0;
-    color: var(--footer-text-color);
 }
 /* ==========================================================================
    14.0 Scroll To Top
    ========================================================================== */
 #scroll-to-top{
-    background-color: var(--header-text-color);
+    background-color: #111;
     display: none;
     width: 45px;
     height: 45px;
@@ -1606,13 +1530,13 @@ span.date{
     font-size: 14px;
     line-height: 45px;
     border-radius: 50%;
-    color: var(--background-color);
+    color: #fff;
     position: fixed;
     bottom: 50px;
     right: 50px;
     z-index: 999;
 }
 #scroll-to-top:hover{
-    background-color: var(--link-hover-color);
-    color: var(--background-color);
+    background-color: #222;
+    color: #fff;
 }
