@@ -130,7 +130,16 @@ body{
 
 /* Adjustments for smaller devices */
 @media (max-width: 767px) {
- 
+    .site-branding {
+        text-align: center; /* Center the content */
+        padding-left: 0; /* Remove padding */
+        padding-right: 0; /* Remove padding */
+    }
+
+    .site-branding a {
+        z-index: 1000; /* Higher z-index */
+        position: relative; /* Needed for z-index to take effect */
+    }
 
     .theme-icon {
         max-width: 20px;
